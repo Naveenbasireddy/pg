@@ -2,9 +2,9 @@ import mysql from 'mysql2/promise';
 
 // First create a connection without database selected
 const initialPool = mysql.createPool({
-  host: 'localhost',
+  host: 'mysql.railway.internal',
   user: 'root',
-  password: '',
+  password: YuPuuCHIPiJxkcumGuFMdHTsrfoIGPXg,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
@@ -17,9 +17,9 @@ async function initializeDatabase() {
     
     // Create a new pool with database selected
     const pool = mysql.createPool({
-      host: 'localhost',
+      host: 'mysql.railway.internal',
       user: 'root',
-      password: '',
+      password: YuPuuCHIPiJxkcumGuFMdHTsrfoIGPXg,
       database: 'pg_management',
       waitForConnections: true,
       connectionLimit: 10,
