@@ -4,7 +4,7 @@ import mysql from 'mysql2/promise';
 const initialPool = mysql.createPool({
   host: 'mysql.railway.internal',
   user: 'root',
-  password: 'YuPuuCHIPiJxkcumGuFMdHTsrfoIGPXg',  // ✅ Added quotes around the password
+  password: 'YuPuuCHIPiJxkcumGuFMdHTsrfoIGPXg',  
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
@@ -19,7 +19,7 @@ async function initializeDatabase() {
     const pool = mysql.createPool({
       host: 'mysql.railway.internal',
       user: 'root',
-      password: YuPuuCHIPiJxkcumGuFMdHTsrfoIGPXg,
+      password: 'YuPuuCHIPiJxkcumGuFMdHTsrfoIGPXg',
       database: 'pg_management',
       waitForConnections: true,
       connectionLimit: 10,
